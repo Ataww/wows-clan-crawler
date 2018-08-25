@@ -83,10 +83,15 @@ async function clanRank(name) {
     } else {
         console.log(`No clan found with tag ${name}`);
     }
+    // global cleanup
+    clanFound = false;
 }
 
 if (process.argv.length > 2) {
-    clanRank(process.argv[2]);
+    const clans = process.argv.slice(2);
+    for (const clan of clans) {
+        clanRank(clan);
+    }
 } else {
     crawl(crawlDivision);
 }
