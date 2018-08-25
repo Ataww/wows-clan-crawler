@@ -1,5 +1,22 @@
 {
     "name": "clanwars-crawler",
+    "description": "WoWs clans api crawler.",
+    "version": "0.1.0",
+    "private": true,
+    "keywords": [
+        "World of Warships",
+        "clans"
+    ],
+    "homepage": "https://github.com/Ataww/wows-clan-crawler#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Ataww/wows-clan-crawler"
+    },
+    "author": {
+        "name": "Nathanael Couret",
+        "email": "nathanael.couret@gmail.com",
+        "url": "https://github.com/Ataww"
+    },
     "scripts": {
         "build": "babel src/crawler.js --out-file build/crawler.js",
         "crawl": "node build/crawler.js"
